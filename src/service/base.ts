@@ -1,0 +1,2 @@
+// baseurl
+export const base = "";
