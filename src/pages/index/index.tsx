@@ -23,6 +23,7 @@ export default () => {
     ;(async () => {
       try {
         const data = await example()
+        console.log(data.data, data.statusCode)
       } catch (error) {
         // console.log(error, 666)
       }

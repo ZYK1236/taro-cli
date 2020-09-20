@@ -55,8 +55,8 @@ const baseOptions = function <T>(params, method = 'GET' as Method) {
 
 export default {
   get<T>(url, data = {}) {
-    let option = { url, data }
-    return baseOptions<T>(option)
+    let params = { url, data }
+    return baseOptions<T>(params)
   },
   post: function (url, data, contentType) {
     let params = { url, data, contentType }
